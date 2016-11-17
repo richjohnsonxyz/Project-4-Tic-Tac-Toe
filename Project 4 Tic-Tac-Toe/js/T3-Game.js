@@ -70,9 +70,6 @@ var T3 = {
 		console.log(count);
 	},
 	
-	checker: function() {
-		
-	},
 	//$('.boxes').children().length = 9 (0,1,2) x (3,4,5) x (6,7,8)
 	win: function(that) {
 		var a = $('.boxes').children();
