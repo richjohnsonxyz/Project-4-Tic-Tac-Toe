@@ -70,6 +70,18 @@ var T3 = {
 		console.log(count);
 	},
 	
+	checker: function() {
+		//Check each item if it has 1 or 2
+		var a = $('.boxes').children();
+		var z = [];
+		$(a).each(function(i) {
+			if ( $(this).hasClass('box-filled-1') || $(this).hasClass('box-filled-2')) {
+				z.push(this);
+				console.log(z);
+			};
+		});
+	},
+	
 	//$('.boxes').children().length = 9 (0,1,2) x (3,4,5) x (6,7,8)
 	win: function(that) {
 		var a = $('.boxes').children();
